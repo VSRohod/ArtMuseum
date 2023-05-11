@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/imprecao.css" media="print">
+</head>
+<body>
+    <header>
+        <h1>ArtMuseum</h1>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Galeria</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+
+        <div id="hamburguer">
+          <ul>
+            <li><button id="closeHamburguer">X</button></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Galeria</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </div>
+        <div id="hamburguerButton">
+          <span class="sumir">-</span> 
+        </div>
+      </header>
+      <main>
+        <h2>Destaque da semana</h2>
+        <hr>
+      <section>
+        <article id="principal">
+          <h3>Elizabeth</h3>
+          <picture>
+            <source media="(max-width : 800px)" srcset="images/elizabethMenor.png">
+            <source media="screen and (orientation: landscape) and (max-height:500px)" srcset="images/elizabethLandscape.png">
+            <img src="images/elizabeth.jpg" alt="Imagem da receita" class="imagens">
+          </picture>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque aliquam sed, nihil minus, porro sapiente dolor eum nesciunt delectus cumque officia ullam maiores ab laudantium, asperiores dolorem possimus. Quaerat, accusantium?</p>
+          <a href="#">Ver sobre</a>
+        </article>
+      </section>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, doloremque illo? Amet distinctio aliquid qui modi porro tenetur praesentium inventore, cum, dignissimos vitae excepturi nihil architecto nulla, cupiditate sint? Dolor?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum porro saepe perferendis vero beatae exercitationem qui eaque totam, autem illo! Natus sequi dolorum temporibus iusto, impedit amet fugiat unde recusandae.</p>
+      <h2>Artes</h2>
+      <hr>
+      <section id="listagem">
+        <article>
+          <h3>Título da arte</h3>
+          <img src="images/arte3.jpg" alt="Imagem da receita" class="imagens">
+          <p>Descrição da arte</p>
+          <a href="#">Ver sobre</a>
+        </article>
+        <article>
+          <h3>Título da arte</h3>
+          <img src="images/arte2.jpg" alt="Imagem da receita" class="imagens">
+          <p>Descrição da arte</p>
+          <a href="#">Ver sobre</a>
+        </article>
+        <article>
+          <h3>Título da arte</h3>
+          <img src="images/arte1.jpg" alt="Imagem da receita" class="imagens">
+          <p>Descrição da arte</p>
+          <a href="#">Ver sobre</a>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>ArtMuseum &copy; 2023</p>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+</html>

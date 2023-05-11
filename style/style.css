@@ -1,0 +1,242 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sumir{
+  display: none;
+}
+
+h2{
+    text-align: center;
+    font-weight: bolder;
+    margin: 10px 0px;
+}
+
+main{
+    text-align: center;
+    max-width: 800px;
+    min-height: 320px;
+    margin: 0px auto;
+    padding: 10px;
+}
+
+#principal{
+    margin: 20px auto;
+}
+/* Estilos para o cabeçalho */
+header {
+    background-color: #2A2B2A;
+    padding: 20px;
+    color: #F8F4E3;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  nav ul, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li ,ul li{
+    margin-right: 20px;
+  }
+  
+  nav li:last-child, li:last-child {
+    margin-right: 0;
+  }
+  
+  nav a , li a{
+    color: #F8F4E3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  #listagem{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px auto;
+  }
+
+  hr{
+    width: 80%;
+    margin: 0px auto;
+    border: #F5124B 2px solid;
+  }
+
+  /* Estilos para a seção de receita */
+  section {
+    margin: 50px 0;
+  }
+  
+  section h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  article {
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: #2a2b2a7e solid 1px;
+    border-radius: 10px;
+  }
+  
+  article h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  article img {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  article p {
+    font-size: 16px;
+    margin: 20px 0;
+    text-align: center;
+    color: #706C61;
+  }
+  
+  article a {
+    background-color: #F5124B;
+    color: #F8F4E3;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }                                                                                         
+  
+  article a:hover {
+    background-color: #FF8966;
+  }
+  
+  /* Estilos para o rodapé */
+  footer {
+    background-color: #2A2B2A;
+    color: #F8F4E3;
+    padding: 20px;
+    text-align: center;
+  }
+
+  #hamburguer{
+    display: none;
+  }
+
+  @media screen and (orientation : landscape){
+    picture{
+      padding: 0px;
+      border: solid white 1px;
+    }
+  }
+
+  @media screen and (max-width : 800px){
+    .sumir{
+      display: block;
+    }
+    #listagem{
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+
+    nav{
+      display: none;
+    }
+
+    article img{
+      width: 100%;
+      float: left;
+    }
+
+    #hamburguerButton{
+      width: 40px;
+      height: 40px;
+      padding: 5px;
+      font-weight: bold;
+      border: solid white 2px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 1s;
+    }
+
+    #hamburguerButton:hover{
+      background-color: #434643;
+      cursor: pointer;
+    }
+
+    #hamburguer{
+      width: 100%;
+      height: auto;
+      text-align: center;
+      padding: 10px auto;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      transition: 1s;
+    }
+  
+    #hamburguer ul{
+      display: inline-block;
+    }
+  
+    #hamburguer ul li{
+      margin: 10px 0px;
+    }
+
+    #closeHamburguer{
+      width: 200px;
+      height: 40px;
+      border: 2px solid white;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  @media screen and (min-width : 800px){
+    header{
+      display: flex;
+      justify-content: space-around;
+    }
+    nav{
+      display: block;
+    }
+    
+    #hamburguerButton{
+      display: none;
+    }
+
+    #hamburguer{
+      display: none;
+    }
+
+    #hamburguer ul{
+      display: none;
+    }
+  }

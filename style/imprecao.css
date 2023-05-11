@@ -1,0 +1,36 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14pt;
+}
+p{
+    padding: 10px;
+}
+
+#principal{
+    margin: 20px 0px;
+}
+
+picture{
+    width: 60%;
+}
+
+article a{
+    display: none;
+}
+
+h2{
+    margin: 20px 0px;
+}
+
+#listagem{
+    width: 35%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: nowrap;
+}
+
+#listagem article{
+    border-style: none;
+}
